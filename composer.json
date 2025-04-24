@@ -1,0 +1,7 @@
+"scripts": {
+  "postinstall": [
+    "php artisan key:generate --ansi",
+    "php artisan migrate --force",
+    "php artisan db:seed --force"
+  ]
+}
